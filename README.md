@@ -26,7 +26,7 @@ insert into idols(name, label, producer, birth, member, song) values ('モーニ
 insert into idols(name, label, producer, birth, member, song) values ('Perfume', 'もみじレーベル','中田ヤスタカ', '2000','3', 'FLASH');
 ```
 
-- launch express server
+- launch express server<br>
 $ npm install<br>
 $ node server.js
 
