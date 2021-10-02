@@ -1,7 +1,7 @@
 # nodejs-graphql
 
 ### About
-This is a GraphQL query demo that publishes MySQL data using Node.js.　The GraphQL API has a single endpoint.
+This is a GraphQL query demo that publishes MySQL data using Node.js.The GraphQL API has a single endpoint.
 
 ### How to run
 - prepare database
