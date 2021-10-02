@@ -1,7 +1,7 @@
 # nodejs-graphql
 
 ### About
-This is a demo that publishes MySQL data in GraphQL with Node.js.
+This is a GraphQL query demo that publishes MySQL data using Node.js.　The GraphQL API has a single endpoint.
 
 ### How to run
 - prepare database
@@ -30,7 +30,7 @@ insert into idols(name, label, producer, birth, member, song) values ('Perfume',
 $ npm install<br>
 $ node server.js
 
-### GraphQL sample
+### GraphQL query sample
 Query
 ```
 query getSingleIdol($name: String!) {
@@ -48,3 +48,6 @@ Variable
   "name": "AKB48"
 }
 ```
+
+### Communication request by cURL
+curl -XPOST -H "Content-Type:application/json" 'http://192.168.34.10:8000/graphql' -d '{"query": "query getSingleIdol($name:String!){idol(name:$name){label producer member song}}", "variables": {"name":"AKB48"}}'
